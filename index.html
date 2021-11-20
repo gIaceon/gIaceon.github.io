@@ -1,6 +1,226 @@
 <!DOCTYPE html>
-<head>
-    <body>
-        <h1>Hi</h1>
+<html lang="en">
+    <head>
+        <title>🍒</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <style>
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                margin: auto;
+            }
+
+            body {
+                -webkit-text-size-adjust: none;
+                line-height: 1.0;
+                word-wrap: break-word;
+                overflow-x: hidden;
+                background-color: #000000;
+                vertical-align: middle;
+            }
+
+            .holder {
+                min-height: 100vh;
+                background-color: black;
+                width: 70%;
+            }
+
+            .scrollingbg {
+                background: url("assets/images/image01.png") repeat-x;
+                min-height: 100vh;
+                animation: slide 1s linear infinite;
+            }
+
+            #wrapper {
+                /* display: flex; */
+                align-items: center;
+                justify-content: center;
+                height: auto;
+                width: 100%;
+                z-index: 2;
+                overflow: hidden;
+                background-color: #aa1a1a;
+                vertical-align: middle;
+                margin-top: 5vh;
+                border-radius: 2vh;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                color: #FFB0E4;
+                font-family: 'Ubuntu', sans-serif;
+                letter-spacing: 0.325rem;
+                width: calc(100% + 0.325rem);
+                font-size: 3.375em;
+                line-height: 1.375;
+                font-weight: 700;
+                text-shadow: .2rem .2rem .25rem #000000;
+                text-align: center;
+                margin-top: .5%;
+                margin-bottom: .5%;
+            }
+
+            #meow {
+                display: block;
+                width: auto;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                cursor: pointer;
+                background: none;
+                outline: none;
+                padding: 0;
+            }
+
+            button:focus {
+                outline: none;
+            }
+
+            h2 {
+                text-transform: none;
+                color: #ffc3ea;
+                font-family: 'Ubuntu', sans-serif;
+                width: 100%;
+                font-size: 1.6em;
+                line-height: 1.375;
+                font-weight: 700;
+                text-shadow: .2rem .2rem .25rem #000000;
+                text-align: center;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+
+            p {
+                text-transform: none;
+                color: #ffc3ea;
+                font-family: 'Ubuntu', sans-serif;
+                width: 100%;
+                font-size: 1em;
+                line-height: 1.375;
+                font-weight: 700;
+                text-shadow: .2rem .2rem .25rem #000000;
+                text-align: center;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            }
+
+            #top {
+                position: fixed;
+                display: block;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                border: #4e0033;
+                border-style: outset;
+                font-family: 'Ubuntu', sans-serif;
+                background-color: rgb(70, 0, 0);
+                color: #ffc3ea;
+                font-size: 3vh;
+                transition-duration: 0.5s;
+                -webkit-transition-duration: 0.5s;
+                cursor: unset;
+                text-decoration: none;
+                overflow: hidden;
+                padding: 1.5vh;
+                opacity: 0;
+                border-radius: 2vh;
+            }
+
+            #top:hover {
+                background-color: rgb(22, 22, 22);
+                border: black;
+                border-style: outset;
+                border-radius: 2vh;
+                color: #ffffff;
+            }
+
+            a {
+                text-transform: none;
+                color: #ff00d4;
+                font-family: 'Ubuntu', sans-serif;
+                width: 100%;
+                font-size: 1.5em;
+                line-height: 1.375;
+                font-weight: 700;
+                text-shadow: .2rem .2rem .25rem #000000;
+                text-align: center;
+                margin: auto;
+                position: relative;
+            }
+
+            .divider {
+                border: .5vh solid rgb(255, 118, 202);
+                border-radius: 2vh;
+                background-color: rgb(255, 118, 202);
+                width: 90%;
+                box-shadow: 0rem .2rem 0.25rem #000000;
+            }
+
+            @keyframes slide {
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+                100% {
+                    transform: translate3d(-16px, 0, 0);
+                }
+            }
+
+        </style>
+    </head>
+    <body class="holder">
+        <div id="wrapper">
+            <h1>YO!</h1>
+            <!-- <img src="assets/images/image01.png" alt="kitty" id='meow'></img> -->
+            <button onclick="meow()" id='meow'><image src="assets/images/image01.png" id='meow'></image></button>
+            <h2>sup, i'm cherry</p>
+        </div>
+
+        <div style="margin-top: 3px; margin-bottom: 3px;"></div>
+
+        <div id="wrapper" style="text-align: center;">
+            <h1>My Shit</h1>
+            <hr class='divider'></hr>
+            <div style="margin-top: 20px; margin-bottom: 20px;"></div>
+            <!--  -->
+            <a href="https://www.youtube.com/channel/UCiGcMZozSlPXqlT9RvLKffA">Youtube</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <a href="https://twitter.com/DoubleCherrys">Twitter</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <a href="https://soundcloud.com/fiar4">SoundCloud</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <a href="https://open.spotify.com/artist/5qAM56gG48HMbgIdsPp1Wv">Spotify</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <a href="https://music.apple.com/us/artist/cherries/1583282241">Apple Music</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <a href="https://www.roblox.com/users/1307956054/profile">Roblox</a>
+            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+            <!--  -->
+            <!-- ... -->
+            <div style="margin-top: 20px; margin-bottom: 20px;"></div>
+        </div>
+
+        <div style="margin-top: 100px; margin-bottom: 50px;"></div>
+
+        <p style="font-size: 1.5vh;">(ill probably add more to this later)</p>
+
+        <div style="margin-top: 100px; margin-bottom: 50px;"></div>
+
+        <!-- <div id="wrapper">
+            <h2>I was told to add a trans flag so I did.</h2>
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">🏳️‍⚧️</h1>
+        </div> -->
+
+        <button onclick="toTop()" id="top" title="Return to the beginning.">Top</button>
     </body>
-</head>
+</html>
+
+<script type='text/javascript' src="scripts/main.js"></script>
