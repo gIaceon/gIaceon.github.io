@@ -1,7 +1,11 @@
 var buttn = document.getElementById('top');
-var meowsound = new Audio('assets/sounds/meow.mp3');
 
 window.onscroll = function() {scroll()};
+
+function PlaySound(Path) {
+    var Sound = new Audio(Path);
+    Sound.play();
+}
 
 function scroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -18,5 +22,5 @@ function toTop() {
 }
 
 function meow() {
-    meowsound.play();
+    PlaySound('assets/sounds/meow.mp3');
 }
