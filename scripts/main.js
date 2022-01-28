@@ -2,8 +2,9 @@ var buttn = document.getElementById('top');
 
 window.onscroll = function() {scroll()};
 
-function PlaySound(Path) {
-    var Sound = new Audio(Path);
+var Sound = new Audio(Path);
+
+function PlaySound() {
     Sound.play();
 }
 
@@ -22,5 +23,5 @@ function toTop() {
 }
 
 function meow() {
-    PlaySound('assets/sounds/meow.mp3');
+    PlaySound();
 }

@@ -30,12 +30,11 @@
                 min-height: 100vh;
                 background-color: black;
                 width: 70%;
-            }
-
-            .scrollingbg {
-                background: url("assets/images/image01.png") repeat-x;
-                min-height: 100vh;
-                animation: slide 1s linear infinite;
+                background-image: url("assets/images/bg.png");
+                background-position: center;
+                animation: slide 10s linear infinite;
+                background-repeat: repeat;
+                background-attachment: fixed;
             }
 
             #wrapper {
@@ -54,7 +53,7 @@
 
             h1 {
                 text-transform: uppercase;
-                color: #FFB0E4;
+                color: hsl(350, 100%, 73%);
                 font-family: 'Ubuntu', sans-serif;
                 letter-spacing: 0.325rem;
                 width: calc(100% + 0.325rem);
@@ -86,7 +85,7 @@
 
             h2 {
                 text-transform: none;
-                color: #ffc3ea;
+                color: #ff8686;
                 font-family: 'Ubuntu', sans-serif;
                 width: 100%;
                 font-size: 1.6em;
@@ -100,7 +99,7 @@
 
             p {
                 text-transform: none;
-                color: #ffc3ea;
+                color: #ff7396;
                 font-family: 'Ubuntu', sans-serif;
                 width: 100%;
                 font-size: 1em;
@@ -122,7 +121,7 @@
                 border-style: outset;
                 font-family: 'Ubuntu', sans-serif;
                 background-color: rgb(70, 0, 0);
-                color: #ffc3ea;
+                color: #ff83a2;
                 font-size: 3vh;
                 transition-duration: 0.5s;
                 -webkit-transition-duration: 0.5s;
@@ -144,10 +143,10 @@
 
             a {
                 text-transform: none;
-                color: #ff00d4;
+                color: #ff7e7e;
                 font-family: 'Ubuntu', sans-serif;
                 width: 100%;
-                font-size: 1.5em;
+                font-size: 2em;
                 line-height: 1.375;
                 font-weight: 700;
                 text-shadow: .2rem .2rem .25rem #000000;
@@ -157,80 +156,79 @@
             }
 
             .divider {
-                border: .5vh solid rgb(255, 118, 202);
+                border: .5vh solid rgb(255, 83, 126);
                 border-radius: 2vh;
-                background-color: rgb(255, 118, 202);
+                background-color: rgb(255, 65, 97);
                 width: 90%;
                 box-shadow: 0rem .2rem 0.25rem #000000;
             }
 
             @keyframes slide {
                 0% {
-                    transform: translate3d(0, 0, 0);
+                    background-position-x: 0px;
+                    background-position-y: 0px;
                 }
                 100% {
-                    transform: translate3d(-16px, 0, 0);
+                    background-position-x: 250px;
+                    background-position-y: 250px;
                 }
             }
 
         </style>
     </head>
-    <body class="holder">
-        <div id="wrapper">
-            <h1>YO!</h1>
-            <!-- <img src="assets/images/image01.png" alt="kitty" id='meow'></img> -->
-            <button onclick="meow()" id='meow'><image src="assets/images/image01.png" id='meow'></image></button>
-            <h2>sup, i'm cherry</p>
-        </div>
+    <body class="holder"></body>
 
-        <div style="margin-top: 3px; margin-bottom: 3px;"></div>
+    <div id="wrapper">
+        <h1>YO!</h1>
+        <!-- <img src="assets/images/image01.png" alt="kitty" id='meow'></img> -->
+        <h2>sup, i'm cherry</p>
+    </div>
 
-        <div id="wrapper" style="text-align: center;">
-            <h1>My Shit</h1>
-            <hr class='divider'></hr>
-            <div style="margin-top: 20px; margin-bottom: 20px;"></div>
-            <!--  -->
-            <a href="https://www.youtube.com/channel/UCiGcMZozSlPXqlT9RvLKffA">Youtube</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <a href="https://twitter.com/DoubleCherrys">Twitter</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <a href="https://soundcloud.com/fiar4">SoundCloud</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <a href="https://open.spotify.com/artist/5qAM56gG48HMbgIdsPp1Wv">Spotify</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <a href="https://music.apple.com/us/artist/cherries/1583282241">Apple Music</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <a href="https://www.roblox.com/users/1307956054/profile">Roblox</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <!-- ... -->
-            <div style="margin-top: 20px; margin-bottom: 20px;"></div>
-            <!--  -->
-            <a href="https://discord.com/invite/3EyhuQ4f7X">Discord</a>
-            <div style="margin-top: 10px; margin-bottom: 10px;"></div>
-            <!--  -->
-            <!-- ... -->
-            <div style="margin-top: 20px; margin-bottom: 20px;"></div>
-        </div>
+    <div style="margin-top: 3px; margin-bottom: 3px;"></div>
 
-        <div style="margin-top: 100px; margin-bottom: 50px;"></div>
+    <div id="wrapper" style="text-align: center;">
+        <h1>My Shit</h1>
+        <hr class='divider'></hr>
+        <div style="margin-top: 20px; margin-bottom: 20px;"></div>
+        <!--  -->
+        <a href="https://www.youtube.com/channel/UCiGcMZozSlPXqlT9RvLKffA">Youtube</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://twitter.com/DoubleCherrys">Twitter</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://soundcloud.com/fiar4">SoundCloud</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://open.spotify.com/artist/5qAM56gG48HMbgIdsPp1Wv">Spotify</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://berryblossom.bandcamp.com">Bandcamp</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://www.roblox.com/users/1307956054/profile">Roblox</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <a href="https://discord.com/invite/3EyhuQ4f7X">Discord</a>
+        <div style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <!--  -->
+        <!-- ... -->
+        <div style="margin-top: 20px; margin-bottom: 20px;"></div>
+        <a href='https://ko-fi.com/U7U09BASP' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+    </div>
 
-        <p style="font-size: 1.5vh;">(ill probably add more to this later)</p>
+    <div style="margin-top: 100px; margin-bottom: 50px;"></div>
 
-        <div style="margin-top: 100px; margin-bottom: 50px;"></div>
+    <p style="font-size: 1.5vh;">(ill probably add more to this later)</p>
 
-        <!-- <div id="wrapper">
-            <h2>I was told to add a trans flag so I did.</h2>
-            <h1 style="font-family: Arial, Helvetica, sans-serif;">🏳️‍⚧️</h1>
-        </div> -->
+    <div style="margin-top: 100px; margin-bottom: 50px;"></div>
 
-        <button onclick="toTop()" id="top" title="Return to the beginning.">Top</button>
-    </body>
+    <!-- <div id="wrapper">
+        <h2>I was told to add a trans flag so I did.</h2>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">🏳️‍⚧️</h1>
+    </div> -->
+
+    <button onclick="toTop()" id="top" title="Return to the beginning.">Top</button>
 </html>
 
 <script type='text/javascript' src="scripts/main.js"></script>
