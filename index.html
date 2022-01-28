@@ -27,14 +27,22 @@
             }
 
             .holder {
-                min-height: 100vh;
+                position: fixed;
                 background-color: black;
-                width: 70%;
                 background-image: url("assets/images/bg.png");
                 background-position: center;
                 animation: slide 10s linear infinite;
                 background-repeat: repeat;
                 background-attachment: fixed;
+                left:0;
+                right:0;
+                z-index: -1;
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin-top: -5vh; /*dumb*/
+                filter: blur(3px);
+                -webkit-filter: blur(3px);
             }
 
             #wrapper {
@@ -42,9 +50,9 @@
                 align-items: center;
                 justify-content: center;
                 height: auto;
-                width: 100%;
+                width: 60ch;
                 z-index: 2;
-                overflow: hidden;
+                overflow: visible;
                 background-color: #aa1a1a;
                 vertical-align: middle;
                 margin-top: 5vh;
@@ -153,6 +161,13 @@
                 text-align: center;
                 margin: auto;
                 position: relative;
+                transition-duration: 0.5s;
+                -webkit-transition-duration: 0.5s;
+            }
+
+            a:hover{
+                text-shadow: .2rem .3rem .1rem #000000;
+                color: #ffeeee;
             }
 
             .divider {
@@ -176,40 +191,40 @@
 
         </style>
     </head>
-    <body class="holder"></body>
-
+    <div class="holder"></div>
+    
     <div id="wrapper">
         <h1>YO!</h1>
         <!-- <img src="assets/images/image01.png" alt="kitty" id='meow'></img> -->
         <h2>sup, i'm cherry</p>
     </div>
 
-    <div style="margin-top: 3px; margin-bottom: 3px;"></div>
+    <div style="margin-top: 5vh; margin-bottom: 10px;"></div>
 
     <div id="wrapper" style="text-align: center;">
         <h1>My Shit</h1>
         <hr class='divider'></hr>
         <div style="margin-top: 20px; margin-bottom: 20px;"></div>
         <!--  -->
-        <a href="https://www.youtube.com/channel/UCiGcMZozSlPXqlT9RvLKffA">Youtube</a>
+        <a class = 'buttonn' href="https://www.youtube.com/channel/UCiGcMZozSlPXqlT9RvLKffA">Youtube</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://twitter.com/DoubleCherrys">Twitter</a>
+        <a class = 'buttonn' href="https://twitter.com/DoubleCherrys">Twitter</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://soundcloud.com/fiar4">SoundCloud</a>
+        <a class = 'buttonn' href="https://soundcloud.com/fiar4">SoundCloud</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://open.spotify.com/artist/5qAM56gG48HMbgIdsPp1Wv">Spotify</a>
+        <a class = 'buttonn' href="https://open.spotify.com/artist/5qAM56gG48HMbgIdsPp1Wv">Spotify</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://berryblossom.bandcamp.com">Bandcamp</a>
+        <a class = 'buttonn' href="https://berryblossom.bandcamp.com">Bandcamp</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://www.roblox.com/users/1307956054/profile">Roblox</a>
+        <a class = 'buttonn' href="https://www.roblox.com/users/1307956054/profile">Roblox</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
-        <a href="https://discord.com/invite/3EyhuQ4f7X">Discord</a>
+        <a class = 'buttonn' href="https://discord.com/invite/3EyhuQ4f7X">Discord</a>
         <div style="margin-top: 10px; margin-bottom: 10px;"></div>
         <!--  -->
         <!-- ... -->
@@ -221,14 +236,12 @@
 
     <p style="font-size: 1.5vh;">(ill probably add more to this later)</p>
 
-    <div style="margin-top: 100px; margin-bottom: 50px;"></div>
-
     <!-- <div id="wrapper">
         <h2>I was told to add a trans flag so I did.</h2>
         <h1 style="font-family: Arial, Helvetica, sans-serif;">🏳️‍⚧️</h1>
     </div> -->
 
-    <button onclick="toTop()" id="top" title="Return to the beginning.">Top</button>
+    <button onclick="toTop()" id="top" class = 'buttonn' title="Return to the beginning.">Top</button>
 </html>
-
+<script src="scripts/jquery-3.6.0.min.js"></script>
 <script type='text/javascript' src="scripts/main.js"></script>

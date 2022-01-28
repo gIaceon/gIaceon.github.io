@@ -2,11 +2,10 @@ var buttn = document.getElementById('top');
 
 window.onscroll = function() {scroll()};
 
-var Sound = new Audio(Path);
+var Sound = new Audio('assets/sounds/launch_glow1.wav');
+Sound.volume = .3;
 
-function PlaySound() {
-    Sound.play();
-}
+
 
 function scroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -22,6 +21,8 @@ function toTop() {
     window.scrollTo(0, 0);
 }
 
-function meow() {
-    PlaySound();
-}
+function meow() {}
+
+$(".buttonn").hover(function() {
+    Sound.play();
+}, function() {});
