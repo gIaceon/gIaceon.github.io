@@ -4,4 +4,58 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 100%;
     font: inherit;
     margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.holder {
+    position: fixed;
+    background-color: black;
+    background-image: url("../images/bgTilePause.png");
+    background-position: center;
+    animation: slide 15s linear infinite;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    left:0;
+    right:0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.ON2_LOGO {
+    width: 15%;
+    height: fit-content;
+    display: block;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: rgba(0, 0, 0, 0)
+}
+
+.ON2_LOGO_FOOTER {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgba(255, 106, 12, 0), rgb(255, 106, 12));
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    100% {
+        background-position-x: 250px;
+        background-position-y: 250px;
+    }
 }
